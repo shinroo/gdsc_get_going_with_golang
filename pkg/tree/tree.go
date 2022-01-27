@@ -6,6 +6,26 @@ import (
 	"golang.org/x/tour/tree"
 )
 
+// Determines the number of nodes in the tree t
+// By walking and incrementing a counter
+func Length(t *tree.Tree) int {
+	ch := make(chan int)
+	go walkProducer(t, ch)
+	idx := 0
+	for range ch {
+		idx++
+	}
+	return idx
+}
+
+// walkProducer walks the tree t sending all values
+// from the tree to the channel ch.
+// Closes channel when done
+func walkProducer(t *tree.Tree, ch chan int) {
+	Walk(t, ch)
+	close(ch)
+}
+
 // Walk walks the tree t sending all values
 // from the tree to the channel ch.
 func Walk(t *tree.Tree, ch chan int) {
