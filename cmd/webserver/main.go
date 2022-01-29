@@ -1,3 +1,4 @@
+// Package main implements a command showing off Go's built in http library
 package main
 
 import (

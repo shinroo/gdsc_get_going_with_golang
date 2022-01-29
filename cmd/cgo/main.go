@@ -1,3 +1,4 @@
+// Package main implements a command showing off Go's C interoperability features
 package main
 
 // typedef int (*intFunc) ();

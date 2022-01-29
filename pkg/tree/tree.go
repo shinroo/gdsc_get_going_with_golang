@@ -1,13 +1,12 @@
-// Utility functions for the Tree data structure
-// provided by the golang tour
+// Package tree adds functions for the Tree data structure provided by the golang tour
 package tree
 
 import (
 	"golang.org/x/tour/tree"
 )
 
-// Determines the number of nodes in the tree t
-// By walking and incrementing a counter
+// Length determines the number of nodes in the tree t
+// by walking and incrementing a counter
 func Length(t *tree.Tree) int {
 	ch := make(chan int)
 	go walkProducer(t, ch)

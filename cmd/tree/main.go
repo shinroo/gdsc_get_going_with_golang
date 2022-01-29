@@ -1,3 +1,4 @@
+// Package main runs the tree Same function on two trees
 package main
 
 import (
