@@ -4,6 +4,10 @@
 
 A companion repository for the GDSC University of London talk, "Get Going with Golang" https://gdsc.community.dev/events/details/developer-student-clubs-university-of-london-presents-get-going-with-golang/
 
+A recording of the talk is available on Youtube:
+[<img src="video_preview.png" width="350">](https://youtu.be/KP7h6Klm8lI)
+
+
 ## Prerequisites
 
 - Golang 1.17.5 ideally
